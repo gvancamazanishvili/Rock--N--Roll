@@ -1,0 +1,455 @@
+
+
+/* main  */
+
+.mainBanner{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 800px;
+    width: 100%;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+.subtitle-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #c0c0c0;
+    font-family: 'texts';
+}
+
+.red-line{
+    width: 40px;
+    object-fit: contain;
+}
+.mainBannerTextContent{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    font-weight: 800;
+    font-family: "titles";
+}
+.mainBannerTextContent h1{
+    font-size: 200px;
+    line-height: 130px;
+    letter-spacing: 15px;
+    font-family: 'bannerName';
+}
+.mainBannerTextContent h1 span{
+    color: #e60026;
+    text-shadow: 0 0 20px #e60026;
+}
+
+.mainBannerTextContent p{
+    color: #c0c0c0;
+    font-family: 'texts';
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.mainBannerBtns{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+}
+.bannerBtns{
+    font-weight: 500;
+    font-family: 'buttons';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.shopBtn{
+    background-color: #e60026;
+    border: 1px solid transparent;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.shopBtn:hover{
+    background-color: #000;
+    box-shadow: 0 0 15px #e60026;
+    border: 1px solid #e60026;
+}
+.rockHistoryBtn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.rockHistoryBtn:hover{
+    color: #e60026;
+}
+.rockHistoryBtn .red-arrow{
+    transform: rotate(-30deg);
+    width: 15px;
+}
+.rockHistoryBtn::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;                
+    height: 1px;                
+    background-color: #cfcfcf78
+}
+.SiteData{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}
+.dataBoxes{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.dataBoxes h1{
+    color: #fff;
+    font-family: 'titles';
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.dataBoxes span{
+    color: rgb(135 135 135);
+    font-size: 13px;
+    font-family: 'texts';
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.right{
+    background-image: url("../assets/images/homepage-banner.jpg");
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+
+.Featured{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+.Featured .textContent{
+    flex-direction: column;
+    font-family: 'titles';
+    letter-spacing: 2px;
+}
+.Featured .textContent h1{
+    font-size: 20px;
+}
+.rightRedLine{
+    width: 50px;
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 900px) {
+    .mainBanner {
+        grid-template-columns: 100%;
+        grid-auto-rows: auto; 
+        
+
+    .left {
+        padding: 30px 20px; 
+    }
+
+    .mainBannerTextContent h1 {
+        font-size: 90px;   
+        line-height: 70px;
+        letter-spacing: 5px;
+    }
+
+    .right {
+        min-height: 450px
+    }
+
+    .mainBannerBtns { 
+        align-items: center;
+    }
+
+    .bannerBtns {
+        width: 100%; 
+    }
+    }
+}
+
+/* end of the main banner */
+
+
+/* small peak of all the other pages offered in the website */
+
+
+/* Shoping category */
+.shoppingCategory{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.shoppingCategory h3{
+    color: #e60026;
+    font-family: 'texts';
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.shoppingCategory h1{
+    font-weight: 500;
+    color: white;
+    font-family: 'bannerName';
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.shopLink{
+    width: 150px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-family: 'titles';
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.shopLink:hover{
+    color: #e60026;
+    cursor: pointer;
+}
+
+.shopLink::after{
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;                
+    height: 1px;                
+    background-color: #cfcfcf2b
+}
+.shopLink-arrow{
+    width: 20px;
+}
+
+/* shopping Cards  */
+.shoppingCards{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-auto-rows: 500px;
+    width: 100%;
+    max-width: 100%;
+}.electicGuitar{
+    background-image: url("../assets/images/shoppingCards-guitar.jpg");
+}.Bass{
+    background-image: url('..//assets/images/shoppingCard-bassGuitar.jpg');
+}.Drums{
+    background-image: url('../assets/images/shoopingCard-drums.jpg');
+}.Apms{
+    background-image: url('../assets/images/shoppingCard-Apm.jpg');
+}
+
+.Cards{
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    text-align: left;
+}
+
+
+.shoppingCardLinks{
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+}
+
+.shoppingCardLinks h6{
+    color: #e60026;
+    font-size: 10px;
+    font-family: 'texts';
+}
+.shoppingCardLinks h1{
+    color: white;
+    text-shadow: transparent ;
+    font-family: 'bannerName';
+    letter-spacing: 3px;
+    font-size: 40px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.shoppingCardLinks h1:hover{   
+    color: #e60026;
+    text-shadow: 0 0 10px #e60026;
+}
+
+
+@media screen and (width < 900px) {
+    .shoppingCategory {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .shoppingCategory h1 {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+
+    .shoppingCards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 400px;
+    }
+
+    .shoppingCardLinks h1 {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+}
+
+@media (width < 550px) {
+    .shoppingCards {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 350px;
+    }
+}
+
+/* sound lab section */
+.SoundLab{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-auto-rows: 700px;
+    width: 100%;
+    max-width: 100%;
+    margin: 200px 0 200px 0;
+}
+
+.soundLabImg{
+    background-image: url("../assets/images/Homepage-SoundLabImg.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+}
+
+.info h3{
+    color: #e60026;
+    font-size: 13px;
+    text-shadow: 0 0 10px #e60026;
+}
+
+.info h1{
+    font-weight: 800;
+    font-family: "bannerName";
+    font-size: 150px;
+    letter-spacing: 4px;
+    line-height: 100px;
+}
+.info h1 span{
+    color: #e60026;
+    text-shadow: 0 0 10px #e60026;
+}
+.info p {
+    color: #cfcfcf78;
+    font-weight: 500;
+    font-family: 'texts';
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.info ul{
+    list-style: none;
+    font-family: 'texts';
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.info li{
+    border-top: 0.5px solid rgba(172, 172, 172, 0.648);
+    padding: 20px;
+}
+
+.info li span{
+    color: #e60026;
+    text-shadow: 0 0 10px #e60026;
+    margin-right:  20px;
+}
+
+.sounLabbtn{
+    font-size: 17px;
+}
+
+@media  (max-width: 900px) {
+    .SoundLab {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .soundLabImg {
+        height: 400px;
+        width: 100%;
+    }
+
+    .info h1 {
+        font-size: 80px;
+        line-height: 75px;
+    }
+
+    .info p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .info h1 {
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    .soundLabImg {
+        height: 250px;
+    }
+}
