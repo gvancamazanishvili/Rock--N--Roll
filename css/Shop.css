@@ -212,15 +212,15 @@
 /* Mobile Screens (Under 600px) */
 @media screen and (max-width: 600px) {
     .shoppinSelectionLinks {
+        flex-direction: column;
+        justify-content: center;
         min-height: auto;
-        top: 120px;
+        top: 129.5px;
+        border-top: 1px solid rgb(82, 82, 82);
     }
-
-    .shoppinSelectionLinks ul {
-        gap: 8px 10px;
-        padding: 10px 12px; 
+    .shoppinSelectionLinks ul{
+        justify-content: center;
     }
-
     .shoppinglist {
         padding: 6px 10px;
     }
