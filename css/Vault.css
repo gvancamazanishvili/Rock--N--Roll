@@ -1,0 +1,183 @@
+.VaultGuitars{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 600px;
+    gap: 10px;
+}
+
+.rareGuitars{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.guitar1 {
+    background-image: url("../assets/images/TheVault/1958-gibson-moderne.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: span 4;
+}
+
+.guitar2 {
+    background-image: url("../assets/images/TheVault/1958-1959-gibson-korina-explorer.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: span 2;
+}
+
+.guitar3 {
+    background-image: url("../assets/images/TheVault/1950-fender-broadcaster.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: span 2;
+}
+
+.guitar4 {
+    background-image: url("../assets/images/TheVault/1955-1962-gretsch-white-penguin.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: span 2;
+}
+
+.guitar5 {
+    background-image: url("../assets/images/TheVault/1958-1960-gibson-les-paul-burst.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: span 2;
+}
+
+.guitar6 {
+    background-image: url("../assets/images/TheVault/brian-may-red-special.jpg");
+    background-size: cover;
+    grid-column: span 4;
+}
+
+.guitar7 {
+    background-image: url("../assets/images/TheVault/1954-fender-stratocaster-0001.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: span 4;
+}
+
+
+
+.textContentVault{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0 20px 20px;
+}
+
+.textContentVault h1{
+    color: #e60026;
+    text-shadow: 0 0 5px #e60026;
+    font-family: 'Titles';
+    letter-spacing: 3px;
+}
+
+
+.textContentVault p{
+    color: rgb(185, 185, 185);
+    font-weight: 600;
+    font-family: 'texts';
+    letter-spacing: 2px;
+}
+
+.rareGuitarimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+
+/* Tablet & Small Desktop (1020px and below) */
+@media (max-width: 1020px) {
+    .VaultGuitars {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 450px;
+        gap: 12px;
+    }
+
+    .guitar1,
+    .guitar2,
+    .guitar3,
+    .guitar4,
+    .guitar5,
+    .guitar6,
+    .guitar7 {
+        grid-column: span 2;
+    }
+
+    .rareGuitars {
+        grid-template-columns: 1fr 1fr;
+        padding: 14px;
+    }
+
+    .textContentVault {
+        padding: 12px;
+    }
+
+    .textContentVault h1 {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+
+    .textContentVault p {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+}
+
+/* Mobile (600px and below) */
+@media (max-width: 600px) {
+    .VaultGuitars {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        gap: 16px;
+    }
+
+    .guitar1,
+    .guitar2,
+    .guitar3,
+    .guitar4,
+    .guitar5,
+    .guitar6,
+    .guitar7 {
+        grid-column: span 1;
+    }
+
+    .rareGuitars {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .rareGuitarimg {
+        height: 240px;
+        border-radius: 14px;
+    }
+
+    .textContentVault {
+        justify-content: flex-start;
+        gap: 8px;
+        padding: 4px 8px 12px;
+    }
+
+    .textContentVault h1 {
+        font-size: 19px;
+        letter-spacing: 1.5px;
+    }
+
+    .textContentVault p {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+}   

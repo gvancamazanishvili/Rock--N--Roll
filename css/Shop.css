@@ -255,7 +255,7 @@
     color: #ffffff;
     padding: 10px;
     font-weight: 600;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
     
     h3{
         color: #e60026;
@@ -277,7 +277,7 @@
 
 .productCard:hover{
     border: 1px solid #e60026;
-    box-shadow: 0 0 10px #e60026;
+    box-shadow: 0 0 50px #e60026;
 }
 .productCard span{
         color: rgb(135, 135, 135);
